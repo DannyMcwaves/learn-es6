@@ -1,0 +1,31 @@
+
+// I want to use babel_eslint for parsing!
+
+{
+
+// beacuse we are using es6, we are parsing the code with a babel-eslint parser.
+
+  "parser": "babel-eslint",
+
+
+// setting up the eslint environment
+
+  "env": {
+    // I write for browser
+    "browser": true,
+    // in CommonJS
+    "node": true
+  },
+
+
+// To give you an idea how to override rule options:
+//this is not a major requirement by the way but a way to ovveride
+
+  "rules": {
+    "quotes": [2, "single"],
+    "eol-last": [0],
+    "no-mixed-requires": [0],
+    "no-underscore-dangle": [0]
+  }
+
+}
