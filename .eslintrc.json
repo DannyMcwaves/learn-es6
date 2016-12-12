@@ -1,0 +1,43 @@
+
+// I want to use babel_eslint for parsing:
+
+// beacuse we are using es6, we are parsing the code with a babel-eslint parser:
+{
+
+
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "parser": "babel-eslint",
+
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true
+    },
+
+    "rules": {
+        "quotes": [0, "single"],
+        "eol-last": [0],
+        "semi": [1],
+        "no-mixed-requires": [0],
+        "no-underscore-dangle": [0],
+        "no-empty": [2],
+        "no-proto": [1],
+        "no-unused-expressions": [1],
+        "comma-dangle": ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+        "global-require": [0],
+        "no-console": [0],
+        "eqeqeq": [2]
+    },
+
+    "root": true,
+
+    "extends": "eslint:recommended"
+
+}
