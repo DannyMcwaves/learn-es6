@@ -1,9 +1,0 @@
-/*
-HI  THERE,
-
-MY NAME IS DANNY AND I AM YOUR TUTOR.
-AND THIS LESSON IS GOING TO USE CODE TO TEACH YOU, TARGETED AT A BEGINNER, THE
-NEW FEATURES OF ES6 OR ES2015.
-
-this is the entry file that contains the course outline.
-*/
