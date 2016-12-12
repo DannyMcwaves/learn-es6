@@ -29,3 +29,7 @@ var {[bar]:a} = obj;
 console.log(a);
 
 module.exports = obj;
+
+
+// to read more about the new properties of objects. VISIT HERE.
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
