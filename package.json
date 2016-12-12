@@ -19,7 +19,7 @@
     "install": "^0.8.2"
   },
   "scripts": {
-    "build": "babel ",
+    "build": "./node_modules/.bin/babel ",
     "build:docs": "babel docs/*.js -d es5",
     "build:es6": "babel es6/*.js -d es5",
     "test": "babel-node ",
