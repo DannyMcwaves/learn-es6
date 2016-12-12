@@ -28,7 +28,7 @@ var array = ["destructuring", "with", "JavaScript", "using", "arrays"],
     a,
     b;
 
-// NB: the syntax on the left side is the same as the synatx on the right side but the left has variable
+// NB: The syntax on the left side is the same as the synatx on the right side but the left has variable
 // That corresponds to the the value on the right side
 
 [a, b] = array
