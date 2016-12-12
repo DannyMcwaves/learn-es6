@@ -1,4 +1,6 @@
 
+"use strict"
+
 // CLASSES
 /*
 classes function just like prototypes in our earlier topic, If you have taken.
@@ -21,7 +23,7 @@ class Polygon{
 
 	// get in front of a function lets you define a function but call it as a property.
 	get area () {
-		 return this.height * this.width
+		return this.height * this.width
 	}
 
 	get perimeter(){
@@ -88,3 +90,24 @@ class Rectangle extends Polygon {
 var rect = new Rectangle(5, 5);
 console.log(rect);
 console.log(rect.area);
+
+//NB: this code does not work. debug it if you can.
+// It raises typeError. this is not a date object.
+/*
+class MyDate extends Date {
+  constructor() {
+    super();
+  }
+
+  getFormattedDate() {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+      'Oct', 'Nov', 'Dec'];
+    return this.getDate() + '-' + months[this.getMonth()] + '-' +
+      this.getFullYear();
+  }
+}
+
+var aDate = new MyDate();
+console.log(aDate.getTime());
+console.log(aDate.getFormattedDate());
+*/
