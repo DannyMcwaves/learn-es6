@@ -1,5 +1,6 @@
 # learn-es6 the hardway.
-**though codes, tutorials, testing, debugging and version transpiling**
+**through live coding, tutorials, testing, debugging and version transpiling**
+##### A VERY DETAILED INTRODUCTION.
 
 ##### NB: this is a work in progress, so any contributions are very much welcome.
 
