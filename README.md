@@ -22,11 +22,11 @@ this folder contains tutorials on almost all the new concepts in es6. the tutori
 
 this folder will contain all the codes that are transpiled or compiled from es6 to es5.
 
-**ES6**
+**`ES6`**
 
 this directory contains or will contain code samples that are not for tutorial purposes but are written in es6. do not expect the files over here to have detail documentations on implementations.
 
-**.babelrc.json**
+**`.babelrc.json`**
 
 the babel configuration file.
 
@@ -57,11 +57,11 @@ Anyone familiar with eslint can go into the eslint file and add more configurati
 
 ## REQUIREMENTS
 
-[x] commandline
-[x] node
-[x] npm
-[x] clone this repo and cd into it.
-[x] run npm install
+- [x] commandline
+- [x] node
+- [x] npm
+- [x] clone this repo and cd into it.
+- [x] run npm install
 
 
 ## USAGE or COMMANDS.
@@ -78,7 +78,7 @@ compiles all the files in the es6 folder into the es5 folder.
 
 the arguments takes a particular file you want to compile, followed by '-d' and the directory you are compiling it to.
 
-eg. npm run build docs/class.js -d es5 // builds the class file from the docs folder into es5 folder.
+eg. **`npm run build docs/class.js -d es5`** // builds the class file from the docs folder into es5 folder.
 
 **`npm run lint:docs`**
 
@@ -92,14 +92,14 @@ checks all the files in the es6 directory for errors.
 
 the argument over here is the name of the you want to lint.
 
-eg: npm run lint docs/template.js
+eg: **`npm run lint docs/template.js`**
 
 **`npm test`** + arguments
 
 when you want to test the code for functionality purposes. for instance in case you want to run the code to see if it works as planned by logging to the console or whatever action it is. this command is your new friend.
 It takes a constant '-e' which stands for evaluate and then the relative path to the file.
 
-eg. npm test -e docs/object.js // runs the object.js file in the docs folder.
+eg. **`npm test -e docs/object.js`** // runs the object.js file in the docs folder.
 
 
 
