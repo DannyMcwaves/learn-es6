@@ -70,7 +70,6 @@ Anyone familiar with eslint can go into the eslint file and add more configurati
 #### BUILDS
 
 **`npm run build:docs`**
-
 this command compiles all the files in the docs and places them in the es5 directory.
 
 
