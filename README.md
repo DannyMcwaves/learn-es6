@@ -67,41 +67,74 @@ Anyone familiar with eslint can go into the eslint file and add more configurati
 
 ## USAGE or COMMANDS.
 
+#### BUILDS
+
 **`npm run build:docs`**
 
 this command compiles all the files in the docs and places them in the es5 directory.
+
 
 **`npm run build:es6`**
 
 compiles all the files in the es6 folder into the es5 folder.
 
+
 **`npm run build `** + arguments
 
-the arguments takes a particular file you want to compile, followed by '-d' and the directory you are compiling it to.
+the arguments takes a particular file you want to compile.
 
-eg. **`npm run build docs/class.js -d es5`** // builds the class file from the docs folder into es5 folder.
+eg. **`npm run build docs/class.js`** // builds the class file from the docs folder into es5 folder.
+
+
+**`npm run build:watch`** + directory
+
+this a command takes the directory you want to build the files from and as long as you modify any file in that
+directory, it gets transpiled into the es5 folder.
+eg: **`npm run build:watch es6`** // transpiles changed files in the es6 directory into the es5 directory.
+
+
+#### TESTS.
+
+**`npm test`** + filepath
+
+this tests the functionality of the file that is passed to it. if it works as expected. by logging outputs to stdin
+eg. **`npm test docs/object.js`** // runs the object.js file in the docs folder.
+
+
+#### LINTS
 
 **`npm run lint:docs`**
 
 this command uses eslint to check all the files in the docs directory for errors.
 
+
 **`npm run lint:es6`**
 
 checks all the files in the es6 directory for errors.
 
-**`npm run lint`** + arguments
+
+**`npm run lint`** + filepath
 
 the argument over here is the name of the you want to lint.
 
 eg: **`npm run lint docs/template.js`**
 
-**`npm test`** + arguments
+
+**`npm run lint:watch-docs`**
+
+this command watches the docs directory and then lints any files that have being changed.
+
+
+**`npm run lint:watch-es6`**
 
 when you want to test the code for functionality purposes. for instance in case you want to run the code to see if it works as planned by logging to the console or whatever action it is. this command is your new friend.
-It takes a constant '-e' which stands for evaluate and then the relative path to the file.
 
-eg. **`npm test -e docs/object.js`** // runs the object.js file in the docs folder.
 
+**`npm run lint:watch`** + directory
+
+It takes the directory where the file resides. generally any file at all you changed in that directory gets linted.
+specify that directory to lint all changed files.
+eg: npm run lint:watch tests/   // watches the files in the tests directory and lints anyone that is changed.
 
 
 ## Need help?
