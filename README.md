@@ -79,7 +79,7 @@ this command compiles all the files in the docs and places them in the es5 direc
 compiles all the files in the es6 folder into the es5 folder.
 
 
-**`npm run build `** + arguments
+**`npm run build `** + filepath
 
 the arguments takes a particular file you want to compile.
 
@@ -100,6 +100,12 @@ eg: **`npm run build:watch es6`** // transpiles changed files in the es6 directo
 this tests the functionality of the file that is passed to it. if it works as expected. by logging outputs to stdin
 eg. **`npm test docs/object.js`** // runs the object.js file in the docs folder.
 
+
+**`npm run test:watch`** + directory
+
+This command watches the directory and the run any file that has being modified in that particular directory.
+It uses the node environment to run files.
+eg. **`npm run test:watch es6`** runs any files modified in es6
 
 #### LINTS
 
