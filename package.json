@@ -26,6 +26,7 @@
     "build:docs": "babel docs/*.js -d es5",
     "build:es6": "babel es6/*.js -d es5",
     "test": "babel-node ",
+    "test:watch": "node tests/test.js ",
     "lint": "eslint ",
     "lint:docs": "eslint --cache docs/*.js",
     "lint:es6": "eslint --cache es6/*.js",
