@@ -1,5 +1,5 @@
 {
-  "name": "es6",
+  "name": "learn-es6",
   "version": "1.0.0",
   "description": "es6 tutorials with babel",
   "main": "index.js",
@@ -15,17 +15,23 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
+    "child-process": "^1.0.2",
     "eslint": "^3.11.1",
-    "install": "^0.8.2"
+    "install": "^0.8.2",
+    "node-watch": "^0.4.1"
   },
   "scripts": {
-    "build": "./node_modules/.bin/babel ",
+    "build": "node tests/build.js ",
+    "build:watch": "node tests/build-watch.js ",
     "build:docs": "babel docs/*.js -d es5",
     "build:es6": "babel es6/*.js -d es5",
     "test": "babel-node ",
     "lint": "eslint ",
-    "lint:docs": "eslint docs/*.js",
-    "lint:es6": "eslint es6/*.js"
+    "lint:docs": "eslint --cache docs/*.js",
+    "lint:es6": "eslint --cache es6/*.js",
+    "lint:watch-docs": "node tests/watch-docs.js",
+    "lint:watch-es6": "node tests/watch-es6.js",
+    "lint:watch": "node tests/watch.js "
   },
   "repository": {
     "type": "git",
