@@ -4,6 +4,6 @@
 
 {
 
-  "presets": ["latest"],
+  "presets": ["es2015"],
   "babelrc": false,
 }
